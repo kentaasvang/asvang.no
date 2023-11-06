@@ -8,7 +8,7 @@
             <!-- Post preview-->
             <div class="post-preview">
 
-                <a href="posts/fra-kode-til-pixel.html">
+                <a href="/posts/fra-kode-til-pixel">
 
                     <h2 class="post-title">Fra kode til pixel</h2>
 

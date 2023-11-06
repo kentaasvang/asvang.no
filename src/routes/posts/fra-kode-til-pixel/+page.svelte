@@ -1,5 +1,5 @@
 <!-- Page Header-->
-<header class="masthead" style="background-image: url('../static/img/voxel-world-header.png')">
+<header class="masthead" style="background-image: url('/img/fra-kode-til-pixel/voxel-world-header.png')">
 
     <div class="container position-relative px-4 px-lg-5">
 
