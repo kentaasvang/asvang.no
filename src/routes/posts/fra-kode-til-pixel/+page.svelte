@@ -13,13 +13,11 @@
         så fullstendig som mulig.
     </p>
 
-    <blockquote>
-
-        I was born not knowing and have had only a little time to change that here and there.
+    <p>
+        <q> I was born not knowing and have had only a little time to change that here and there.  </q>
         <br>
         - Richard P. Feynman
-
-    </blockquote>
+    </p>
 
     <h2> Hvorfor voxler </h2>
 
@@ -35,14 +33,76 @@
         Først og fremst er jeg veldig familiær med språket. Og sist men ikke minst så er det veldig lite abstraksjonslag på prosedyrer i språket. Dette hjelper meg å forstå hva som skjer under panseret.
     </p>
 
-    <!-- Set Up the Development Environment
-    Draw a Vertex
-    Render a Line -->
+    <p>
+        <b>Sette opp miljøet</b>
+    </p>   
 
+    <p>
+        Vi starter med å lage en ny mappe for prosjektet og installere Panda3D.
+    </p>
+
+    <code>
+        mkdir mini-voxel && cd mini-voxel && virtualenv venv && source venv/bin/activate && pip install panda3d 
+    </code>
+
+    <p>
+        Det er og god skikk å lage en requirements.txt fil for å holde styr på avhengigheter.  <br>
+    </p>
+
+    <code>
+        pip freeze > requirements.txt
+    </code>
+
+    <p>
+        Nå kan vi lage en liten testfil for å se om alt fungerer som det skal.
+    </p>
+
+    <pre>
+touch mini_voxel.py
+echo "#!./venv/bin/python
+from direct.showbase.ShowBase import ShowBase
+
+class MiniVoxel(ShowBase):
+
+    def __init__(self):
+        ShowBase.__init__(self)
+
+        # Load the environment model.
+        self.scene = self.loader.loadModel("models/environment")
+
+        # Reparent the model to render.
+        self.scene.reparentTo(self.render)
+
+        # Apply scale and position transforms on the model.
+        self.scene.setScale(0.25, 0.25, 0.25)
+        self.scene.setPos(-8, 42, 0)
+
+mini_voxel = MiniVoxel()
+mini_voxel.run()" > mini_voxel.py
+    </pre>
+
+    <p>
+        Nå kan vi kjøre programmet vårt med:
+    </p>
+
+    <code>
+        python mini_voxel.py
+    </code>
+
+    <p>
+        Om alt har gått som det skal skal du nå se et vindu med noe gress og gråstein.
+    </p>
+
+    <img src="/img/fra-kode-til-pixel/panda3d-hello-world-window.png" alt="mini voxel">
+
+    <p>
+        Vi har nå et fungerende utviklermiljø. Nå kan vi begynne å lage noe.
+    </p>
 
     <h2> Referanser </h2>
+
     <ul>
-        <a href="https://blog.tedd.no/2018/12/22/building-a-voxel-engine-part-1/?fbclid=IwAR38Q10u1RHSnee1ASHu8Ibarwfgl1GTU-zAJZUwrCwjUk5BaqiUqDnD_a0"><li>blog.tedd.no - building a voxel engine</li></a>   
+        <li><a href="https://docs.panda3d.org/1.10">Panda3D documentation</a></li>   
     </ul>
 
 </article>
