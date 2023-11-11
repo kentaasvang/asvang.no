@@ -1,68 +1,48 @@
 <!-- Page Header-->
-<header class="masthead" style="background-image: url('/img/fra-kode-til-pixel/voxel-world-header.png')">
+<h1> Fra kode til pixel </h1>
+<h2> Hode først ned i voxel-verden </h2>
 
-    <div class="container position-relative px-4 px-lg-5">
-
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-
-            <div class="col-md-10 col-lg-8 col-xl-7">
-
-                <div class="post-heading">
-
-                    <h1>Fra kode til pixel</h1>
-
-                    <h2 class="subheading">Hode først ned i grafikkprogrammeringens verden</h2>
-
-                    <span class="meta">
-                        Postet av
-                        <a href="#!">Kent M. Åsvang</a>
-                        den 24 August, 2023
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</header>
+<img src="/img/fra-kode-til-pixel/voxel-world-header.png" alt="voxel world">
 
 <!-- Post Content-->
-<article class="mb-4">
+<article>
 
-    <div class="container px-4 px-lg-5">
+    <p> 
+        Jeg kan ingenting om grafikkprogrammering. Jeg kan ingenting om voxler heller, men det er litt av poenget. Når man lærer nye ting utforsker man samtidig seg selv og våre begrensninger. 
+        Det er ikke feil å tenke at vårt mentale selvbilde er en labyrint. Og når man går veier vi ikke har gått før, så lærer vi mer om oss selv. Om livet har en mening med seg selv, så er det kanskje å utforske denne labyrinten
+        så fullstendig som mulig.
+    </p>
 
-        <div class="row gx-4 gx-lg-5 justify-content-center">
+    <blockquote>
 
-            <div class="col-md-10 col-lg-8 col-xl-7">
+        I was born not knowing and have had only a little time to change that here and there.
+        <br>
+        - Richard P. Feynman
 
-                <p> 
-                    Jeg kan ingenting om grafikkprogrammering. Jeg kan ingenting om å skrive blogg heller, men det er litt av poenget.
-                    Det har blitt sagt av prominente psykologer at å utsette seg for nye ting låser opp potensialet.
-                    Ikke bare metaforisk, men at man med å utsette seg for nye situasjoner faktisk aktiverer nye celler i hjernen og dermed skaper en varig endring av jeg'et. 
-                    Jeg kan bare ekstrapolere at dette gjelder for å lære seg nye ting også. Dog, det spiller ingen rolle. Hovedpoenget er å ha det gøy.
-                    <br>
-                    <strong style="color: red"> prøv å finn referanse til sovende celler i hjernen! Jordan Peterson snakker om dette</strong>
-                </p>
+    </blockquote>
 
-                <h2 class="section-heading"> Hvor skal man begynne </h2>
+    <h2> Hvorfor voxler </h2>
 
-                <p>
+    <p>
+        Jeg har aldri vært fascinert av spill eller grafikk, men jeg er glad i ting jeg kan skape selv. Programmering har latt meg utfolde denne delen av meg på utallige måter. En bekjent av meg
+        skal få mye av skylden for at nettopp voxler ble valgt som oppheng de neste par ukene (hei konge). Etter å ha hørt mye proklamasjon rundt voxel-motorer og de interessante utfordringene som ligger der begynte jeg å ville vite mer.
+    </p>
 
-                </p>
+    <h2> Utviklermiljø </h2>
 
-                <!-- <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p> -->
-                <!-- <h2 class="section-heading">The Final Frontier</h2> -->
-                <!-- <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote> -->
-                <!-- <a href="#!"><img class="img-fluid" src="assets/img/post-sample-image.jpg" alt="..." /></a> -->
-                <!-- <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span> -->
+    <p>
+        Etter en kort samtale med chatGPT landet jeg på python og Panda3D. Det er noen åpenbare ulemper med å bruke python til 3d-spillprogrammering, men det har et par fordeler også. 
+        Først og fremst er jeg veldig familiær med språket. Og sist men ikke minst så er det veldig lite abstraksjonslag på prosedyrer i språket. Dette hjelper meg å forstå hva som skjer under panseret.
+    </p>
 
-            </div>
+    <!-- Set Up the Development Environment
+    Draw a Vertex
+    Render a Line -->
 
-        </div>
 
-    </div>
+    <h2> Referanser </h2>
+    <ul>
+        <a href="https://blog.tedd.no/2018/12/22/building-a-voxel-engine-part-1/?fbclid=IwAR38Q10u1RHSnee1ASHu8Ibarwfgl1GTU-zAJZUwrCwjUk5BaqiUqDnD_a0"><li>blog.tedd.no - building a voxel engine</li></a>   
+    </ul>
 
 </article>
